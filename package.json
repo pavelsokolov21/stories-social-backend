@@ -4,6 +4,7 @@
   "description": "Backend of Stories Social",
   "main": "index.js",
   "scripts": {
+    "start:prod": "node ./dist/index.js",
     "start:dev": "nodemon ./src/index.ts",
     "build": "npx tsc"
   },
