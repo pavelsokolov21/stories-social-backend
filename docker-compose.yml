@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  backend:
+    container_name: stories_social_backend
+    restart: always
+    build: .
+    environment:
+      PORT: 3000
+    ports:
+      - "8080:3000"
