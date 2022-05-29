@@ -6,6 +6,13 @@ services:
     restart: always
     build: .
     environment:
-      PORT: 3000
+      PORT: ${PORT}
+      DB_SERVER_HOSTNAME: ${DB_SERVER_HOSTNAME}
+      DB_SERVER_USERNAME: ${DB_SERVER_USERNAME}
+      DB_SERVER_PASSWORD: ${DB_SERVER_PASSWORD}
+      DB_SERVER_PORT: ${DB_SERVER_PORT}
+      DB_SERVER_NAME: ${DB_SERVER_NAME}
+      DB_MIN_POOLS: ${DB_MIN_POOLS}
+      DB_MAX_POOLS: ${DB_MAX_POOLS}
     ports:
       - "8080:3000"
